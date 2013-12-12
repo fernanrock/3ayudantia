@@ -1,0 +1,145 @@
+\documentclass[10pt]{article} 
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{letterpaper} 
+
+\usepackage[spanish]{babel} % Permite utilizar español
+\usepackage{graphicx} % support the \includegraphics command and options
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+
+%\usepackage{booktabs}
+%\usepackage{array}
+\usepackage{subfig}
+
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} 
+
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Altera el estilo del  indice
+\usepackage{amsmath}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.15\textwidth]{Utem}~\\[1cm]
+
+\textsc{\normalsize Universidad Tecnológica Metropolitana}\\[1.5cm]
+
+\textsc{\ Trabajo 3 Ayudantia }\\[0.5cm]
+
+% Title
+\HRule \\[0.4cm]
+{ \huge \bf Patrones de Diseño}\\[0.4cm]
+
+\HRule \\[1.5cm]
+\textsc{\large Fernando Guerrero Muñoz , David Muñoz Muñoz, Ivan Montenegro }\\[1cm]
+\textsc{\large Profesor: Luis Herrera}\\
+\textsc{\large Ayudante: Guillermo Rojas}\\
+\end{center}
+\end{titlepage}
+
+%\tableofcontents Esto Crea el Indice
+\newpage
+
+\begin{titlepage}
+{ \huge  Relacion de principales patrones GOF (GANG OF FOUR):}
+
+\section{Patrones Creacionales:}
+\begin{itemize}
+
+
+\item Object Pool. 
+\item Abstract Factory (fàbrica abstracta).
+\item Builder (constructor virtual).
+\item Factory Method (Metodo de fabricación).
+\item Prototipo.
+\item Instancia única (Singleton).
+
+
+\end{itemize}
+\end{titlepage}
+
+
+\newpage
+\section{Patrones Estructurales:}
+\begin{itemize}
+
+
+\item Adaptador o envoltorio (Adapter): oficia de intermediario entre dos clases cuyas interfaces 
+son incompatibles de manera tal que puedan ser utilizadas en 
+conjunto. 
+\item Puente (Bridge): Disocia un componente complejo en dos jerarquías de 
+clases: una abstracción funcional y la implementación interna, para 
+que ambas puedan variar independientemente.
+\item Objeto Compuesto (Composite): Compone objetos en estructuras de árboles para 
+representar jerarquías parte-todo. Permite que los clientes traten de 
+manera uniforme a los objetos individuales y a los complejos. 
+\item Decorador (Decorator): Añade funcionalidad a una clase dinámicamente.
+\item Fachada (Facade): Proporciona una interfaz simplificada para un conjunto de 
+interfaces de subsistemas. Define una interfaz de alto nivel que 
+hace que un subsistema sea más fácil de usar
+\item Peso Ligero (Flyweigth): Permite el uso de un gran número de objetos de grano 
+fino de forma eficiente mediante compartimiento.
+\item Proxy: Provee un sustituto o representante de un objeto para 
+controlar el acceso a éste. Este patrón posee las siguientes variantes:
+\begin{itemize} 
+\item Proxy remoto: se encarga de representar un objeto remoto 
+como si estuviese localmente. 
+\item Proxy virtual: se encarga de crear objetos de gran tamaño bajo 
+demanda. 
+\item Proxy de protección: se encarga de controlar el acceso al objeto 
+representado.
+\end{itemize}
+
+\item Modulo.
+
+\end{itemize}
+
+
+
+
+
+
+\newpage
+\section{Comparacion}
+acá va la tabla
+
+\begin{tabular}{|lc|l|} \hline
+\multicolumn{1}{|p{5cm}|}{\centering %
+Metodologia Scrum} & \multicolumn{1}{|p{5cm}|}{\centering % 
+Metodologia cascada} \tabularnewline \hline
+ • Gestionar  proyectos, no contiene definiciones\\ 
+en áreas de ingeniería, el trabajo es efectuado\\ 
+por equipos auto-organizados y auto-dirigidos, \\
+logrando motivación, responsabilidad y compromiso.  &  Los proyectos reales raramente siguen el flujo secuencial\\
+que propone el modelo, siempre hay iteraciones\\
+y se crean problemas en la aplicación del paradigma \\
+ • Venus & 108.3 \\ 
+ • Tierra & 150.0 \\ \hline
+\end{tabular}
+
+
+
+
+
+\section{Anexo}
+
+
+
+
+\end{document}
